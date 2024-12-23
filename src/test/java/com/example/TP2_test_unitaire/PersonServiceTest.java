@@ -16,8 +16,8 @@ public class PersonServiceTest {
         List<Person3> peopleLivingIn123RueA = PersonService.filterByAddress("123 Rue A");
 
         List<Person3> expectedPersonsLivingIn123RueA = Arrays.asList(
-                new Person3("Alice", "Doe", LocalDate.of(1990, 5, 12), "123 Rue A"),
-                new Person3("Charlie", "Brown", LocalDate.of(1985, 3, 9), "123 Rue A")
+                new Person3("Alice", "Alice45", LocalDate.of(1990, 5, 12), "123 Rue A"),
+                new Person3("Alice3", "Alice4", LocalDate.of(1985, 3, 9), "123 Rue A")
         );
 
         assertThat(peopleLivingIn123RueA).hasSize(2);
@@ -30,8 +30,8 @@ public class PersonServiceTest {
 
 
         List<Person3> expectedAdultPersons = Arrays.asList(
-                new Person3("Alice", "Doe", LocalDate.of(1990, 5, 12), "123 Rue A"),
-                new Person3("hicham", "aymane", LocalDate.of(1985, 3, 9), "789 Rue C")
+                new Person3("hicham1", "hicham3", LocalDate.of(1990, 5, 12), "123 Rue A"),
+                new Person3("hicham", "hicham5", LocalDate.of(1985, 3, 9), "789 Rue C")
 
         );
 

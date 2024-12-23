@@ -16,9 +16,9 @@ public class Person2Test {
     void testTwoPersonAreEquals() {
 
         Set<Person2> people = new HashSet<>();
-        Person2 person1 = new Person2(1, "salma");
-        Person2 person2 = new Person2(2, "mohamed");
-        Person2 person3 = new Person2(1, "aymane");
+        Person2 person1 = new Person2(1, "simo");
+        Person2 person2 = new Person2(2, "simo2");
+        Person2 person3 = new Person2(1, "simo3");
 
 
         people.add(person1);
@@ -50,8 +50,8 @@ public class Person2Test {
     void testRemoveWithIterator() {
 
         Set<Person2> people = new HashSet<>();
-        Person2 person1 = new Person2(1, "youusef");
-        Person2 person2 = new Person2(2, "hicham");
+        Person2 person1 = new Person2(1, "simo1");
+        Person2 person2 = new Person2(2, "simo5");
         people.add(person1);
         people.add(person2);
 

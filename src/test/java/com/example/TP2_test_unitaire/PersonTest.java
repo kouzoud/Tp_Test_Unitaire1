@@ -17,9 +17,9 @@ public class PersonTest {
     void TriPersonsAvecLastNameAndFirstName() {
         List<Person> people = new ArrayList<>();
 
-        people.add(new Person("ELaamaj", "Aymane"));
-        people.add(new Person("Kozoud", "Mohamed"));
-        people.add(new Person("Salma", "janati"));
+        people.add(new Person("Kozoud","Mohamed"));
+        people.add(new Person("ait ali","ahemad"));
+
 
         Collections.sort(people);
         assertThat(people).isNotNull();
@@ -27,9 +27,8 @@ public class PersonTest {
         assertThat(people)
                 .extracting(Person::toString)
                 .containsExactly(
-                        "ELaamaj, Aymane",
                         "Kozoud, Mohamed",
-                        "Salma, janati"
+                                 "ait ali, ahemad"
 
                 );
     }
